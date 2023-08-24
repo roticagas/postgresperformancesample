@@ -18,3 +18,6 @@ POST {{host}}/sample
 Content-Type: text/plain
 
 {{name}}
+
+###
+GET {{host}}/sample/count
