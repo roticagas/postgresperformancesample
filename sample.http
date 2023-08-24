@@ -1,0 +1,20 @@
+###
+GET {{host}}/hello
+
+###
+GET {{host}}/sample
+
+###
+< {%
+    request.variables.set("name", "ef")
+%}
+GET {{host}}/sample/{{name}}
+
+###
+< {%
+    request.variables.set("name", "EFG")
+%}
+POST {{host}}/sample
+Content-Type: text/plain
+
+{{name}}
