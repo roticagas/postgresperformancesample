@@ -27,4 +27,7 @@ public class SampleService {
         return repository.save(SampleEntity.build(name));
     }
 
+    public Mono<Long> count() {
+        return repository.count();
+    }
 }

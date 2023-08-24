@@ -36,4 +36,8 @@ public class SampleController {
         return service.save(name);
     }
 
+    @GetMapping("/sample/count")
+    Mono<Long> count() {
+        return service.count();
+    }
 }
